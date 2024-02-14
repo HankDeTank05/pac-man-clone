@@ -6,21 +6,11 @@
 class Game : public olc::PixelGameEngine
 {
 public:
-	Game()
-	{
-		sAppName = "Pac-Man Clone";
-	}
+	Game();
 
 public:
-	bool OnUserCreate() override
-	{
-		return true;
-	}
-
-	bool OnUserUpdate(float fElapsedTime) override
-	{
-		return true;
-	}
+	bool OnUserCreate() override;
+	bool OnUserUpdate(float fElapsedTime) override;
 };
 
 #endif
